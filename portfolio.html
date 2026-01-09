@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AAA FIN SOL Portfolio - Explore our successful IT projects including web applications, mobile apps, cloud solutions, and enterprise software.">
+    <meta name="theme-color" content="#1E3A5F">
+    <title>Portfolio - AAA FIN SOL IT Services</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/libs/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-area fixed-top scrolled">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="AAA FIN SOL IT Services" class="navbar-logo">
+                </a>
+                <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                    <span class="toggler-icon"><span></span><span></span><span></span></span>
+                </button>
+                <div class="navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!-- Services Mega Menu -->
+                        <li class="nav-item mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Services</a>
+                            <div class="mega-menu mega-menu-lg">
+                                <div class="mega-menu-inner">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="mega-menu-column">
+                                                <h5 class="mega-menu-title">Software Development</h5>
+                                                <ul class="mega-menu-links">
+                                                    <li><a href="web-applications.html">Web Applications</a></li>
+                                                    <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+                                                    <li><a href="custom-software.html">Custom Software</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mega-menu-column">
+                                                <h5 class="mega-menu-title">Cloud Solutions</h5>
+                                                <ul class="mega-menu-links">
+                                                    <li><a href="cloud-migration.html">Cloud Migration</a></li>
+                                                    <li><a href="aws-azure-services.html">AWS & Azure Services</a></li>
+                                                    <li><a href="devops-cicd.html">DevOps & CI/CD</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mega-menu-column">
+                                                <h5 class="mega-menu-title">Cybersecurity</h5>
+                                                <ul class="mega-menu-links">
+                                                    <li><a href="security-audits.html">Security Audits</a></li>
+                                                    <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                                    <li><a href="compliance-risk.html">Compliance & Risk</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mega-menu-column">
+                                                <h5 class="mega-menu-title">Data & Analytics</h5>
+                                                <ul class="mega-menu-links">
+                                                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                                                    <li><a href="data-visualization.html">Data Visualization</a></li>
+                                                    <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mega-menu-column">
+                                                <h5 class="mega-menu-title">IT Infrastructure</h5>
+                                                <ul class="mega-menu-links">
+                                                    <li><a href="network-solutions.html">Network Solutions</a></li>
+                                                    <li><a href="server-management.html">Server Management</a></li>
+                                                    <li><a href="it-consulting.html">IT Consulting</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mega-menu-column">
+                                                <h5 class="mega-menu-title">Support</h5>
+                                                <ul class="mega-menu-links">
+                                                    <li><a href="technical-support.html">24/7 Technical Support</a></li>
+                                                    <li><a href="managed-it-services.html">Managed IT Services</a></li>
+                                                    <li><a href="help-desk.html">Help Desk</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <!-- Search Icon -->
+                        <li class="nav-item nav-search">
+                            <a class="nav-link search-toggle" href="#" id="searchToggle">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search Overlay -->
+                <div class="search-overlay" id="searchOverlay">
+                    <button class="search-close" id="searchClose">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    <div class="search-overlay-inner">
+                        <form class="search-form">
+                            <input type="text" class="search-input" placeholder="Search...">
+                            <button type="submit" class="search-submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <button class="mobile-close-btn" id="mobileCloseBtn"><i class="bi bi-x-lg"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-white mb-3 scroll-animate" data-animation="fadeInDown">Our Portfolio</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center scroll-animate" data-animation="fadeInUp" data-delay="200">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+                            <li class="breadcrumb-item text-white active">Portfolio</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Introduction -->
+    <section class="py-5 section-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4 scroll-animate" data-animation="fadeInDown">Delivering Digital Excellence</h2>
+                    <p class="lead scroll-animate" data-animation="fadeInUp" data-delay="100">Explore our portfolio of successful projects spanning web applications, mobile apps, cloud solutions, and enterprise software. Each project represents our commitment to innovation and client satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="py-4 section-gradient">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="scroll-animate" data-animation="fadeInUp" data-delay="100">
+                        <h2 class="fw-bold mb-0">500+</h2>
+                        <p class="mb-0 text-white-50">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="scroll-animate" data-animation="fadeInUp" data-delay="200">
+                        <h2 class="fw-bold mb-0">200+</h2>
+                        <p class="mb-0 text-white-50">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="scroll-animate" data-animation="fadeInUp" data-delay="300">
+                        <h2 class="fw-bold mb-0">15+</h2>
+                        <p class="mb-0 text-white-50">Industries Served</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="scroll-animate" data-animation="fadeInUp" data-delay="400">
+                        <h2 class="fw-bold mb-0">98%</h2>
+                        <p class="mb-0 text-white-50">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-5 section-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title scroll-animate" data-animation="fadeInDown">Featured Projects</h2>
+                <p class="section-subtitle scroll-animate" data-animation="fadeInUp" data-delay="100">Our most impactful work across various industries</p>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow h-100 scroll-animate" data-animation="fadeInUp" data-delay="100">
+                        <img src="assets/images/portfolio/project-1.jpg" alt="E-Commerce Platform" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Web Application</span>
+                                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>2025</span>
+                            </div>
+                            <h4 class="card-title card-title-primary">E-Commerce Platform</h4>
+                            <p class="card-text">A fully-featured e-commerce solution with real-time inventory management, payment gateway integration, and AI-powered product recommendations.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">React</span>
+                                <span class="badge bg-light text-dark me-1">Node.js</span>
+                                <span class="badge bg-light text-dark me-1">MongoDB</span>
+                                <span class="badge bg-light text-dark">AWS</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-building me-2 text-primary"></i>
+                                <span class="text-muted">Retail Industry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow h-100 scroll-animate" data-animation="fadeInUp" data-delay="200">
+                        <img src="assets/images/portfolio/project-2.jpg" alt="Healthcare Management System" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success">Enterprise Software</span>
+                                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>2025</span>
+                            </div>
+                            <h4 class="card-title card-title-primary">Healthcare Management System</h4>
+                            <p class="card-text">Comprehensive hospital management system with patient records, appointment scheduling, billing, and telemedicine capabilities.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">Angular</span>
+                                <span class="badge bg-light text-dark me-1">.NET Core</span>
+                                <span class="badge bg-light text-dark me-1">SQL Server</span>
+                                <span class="badge bg-light text-dark">Azure</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-heart-pulse me-2 text-primary"></i>
+                                <span class="text-muted">Healthcare Industry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow h-100 scroll-animate" data-animation="fadeInUp" data-delay="300">
+                        <img src="assets/images/portfolio/project-3.jpg" alt="Mobile Banking App" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info">Mobile App</span>
+                                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>2024</span>
+                            </div>
+                            <h4 class="card-title card-title-primary">Mobile Banking Application</h4>
+                            <p class="card-text">Secure mobile banking app with biometric authentication, real-time transactions, bill payments, and investment tracking features.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">Flutter</span>
+                                <span class="badge bg-light text-dark me-1">Kotlin</span>
+                                <span class="badge bg-light text-dark me-1">Firebase</span>
+                                <span class="badge bg-light text-dark">Blockchain</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-bank me-2 text-primary"></i>
+                                <span class="text-muted">Finance & Banking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow h-100 scroll-animate" data-animation="fadeInUp" data-delay="400">
+                        <img src="assets/images/portfolio/project-4.jpg" alt="Cloud Migration" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-warning text-dark">Cloud Solution</span>
+                                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>2024</span>
+                            </div>
+                            <h4 class="card-title card-title-primary">Enterprise Cloud Migration</h4>
+                            <p class="card-text">Complete cloud migration of legacy systems to AWS, including data migration, application modernization, and DevOps implementation.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">AWS</span>
+                                <span class="badge bg-light text-dark me-1">Terraform</span>
+                                <span class="badge bg-light text-dark me-1">Docker</span>
+                                <span class="badge bg-light text-dark">Kubernetes</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-truck me-2 text-primary"></i>
+                                <span class="text-muted">Logistics & Supply Chain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Projects -->
+    <section class="py-5 section-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title scroll-animate" data-animation="fadeInDown">More Projects</h2>
+                <p class="section-subtitle scroll-animate" data-animation="fadeInUp" data-delay="100">Explore our diverse range of successful implementations</p>
+            </div>
+            <div class="row g-4">
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 image-card scroll-animate" data-animation="fadeInUp" data-delay="100">
+                        <img src="assets/images/portfolio/project-5.jpg" alt="CRM System" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Application</span>
+                            <h5 class="card-title">CRM System</h5>
+                            <p class="card-text small text-muted">Custom CRM with sales automation, lead tracking, and analytics dashboard.</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Vue.js</span>
+                                <span class="badge bg-light text-dark">Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 image-card scroll-animate" data-animation="fadeInUp" data-delay="200">
+                        <img src="assets/images/portfolio/project-6.jpg" alt="Inventory Management" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Enterprise Software</span>
+                            <h5 class="card-title">Inventory Management</h5>
+                            <p class="card-text small text-muted">Real-time inventory tracking with barcode scanning and automated reordering.</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 image-card scroll-animate" data-animation="fadeInUp" data-delay="300">
+                        <img src="assets/images/portfolio/project-7.jpg" alt="Food Delivery App" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Mobile App</span>
+                            <h5 class="card-title">Food Delivery App</h5>
+                            <p class="card-text small text-muted">On-demand food delivery with real-time tracking and restaurant management.</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">React Native</span>
+                                <span class="badge bg-light text-dark">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 image-card scroll-animate" data-animation="fadeInUp" data-delay="400">
+                        <img src="assets/images/portfolio/project-8.jpg" alt="Learning Management System" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Application</span>
+                            <h5 class="card-title">Learning Management System</h5>
+                            <p class="card-text small text-muted">E-learning platform with video courses, quizzes, and progress tracking.</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Next.js</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 image-card scroll-animate" data-animation="fadeInUp" data-delay="500">
+                        <img src="assets/images/post/post-1.png" alt="Analytics Dashboard" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Data Analytics</span>
+                            <h5 class="card-title">Analytics Dashboard</h5>
+                            <p class="card-text small text-muted">Business intelligence dashboard with real-time KPIs and predictive analytics.</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Power BI</span>
+                                <span class="badge bg-light text-dark">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 image-card scroll-animate" data-animation="fadeInUp" data-delay="600">
+                        <img src="assets/images/post/post-2.png" alt="IoT Platform" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">IoT Solution</span>
+                            <h5 class="card-title">IoT Monitoring Platform</h5>
+                            <p class="card-text small text-muted">Industrial IoT platform for equipment monitoring and predictive maintenance.</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Azure IoT</span>
+                                <span class="badge bg-light text-dark">TimescaleDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section class="py-5 section-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title scroll-animate" data-animation="fadeInDown">Industries We Serve</h2>
+                <p class="section-subtitle scroll-animate" data-animation="fadeInUp" data-delay="100">Delivering tailored solutions across diverse sectors</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm text-center p-3 h-100 scroll-animate" data-animation="fadeInUp" data-delay="100">
+                        <i class="bi bi-heart-pulse fs-1 text-primary mb-2"></i>
+                        <h6 class="mb-0">Healthcare</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm text-center p-3 h-100 scroll-animate" data-animation="fadeInUp" data-delay="150">
+                        <i class="bi bi-bank fs-1 text-primary mb-2"></i>
+                        <h6 class="mb-0">Finance</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm text-center p-3 h-100 scroll-animate" data-animation="fadeInUp" data-delay="200">
+                        <i class="bi bi-cart4 fs-1 text-primary mb-2"></i>
+                        <h6 class="mb-0">E-Commerce</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm text-center p-3 h-100 scroll-animate" data-animation="fadeInUp" data-delay="250">
+                        <i class="bi bi-mortarboard fs-1 text-primary mb-2"></i>
+                        <h6 class="mb-0">Education</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm text-center p-3 h-100 scroll-animate" data-animation="fadeInUp" data-delay="300">
+                        <i class="bi bi-truck fs-1 text-primary mb-2"></i>
+                        <h6 class="mb-0">Logistics</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm text-center p-3 h-100 scroll-animate" data-animation="fadeInUp" data-delay="350">
+                        <i class="bi bi-gear fs-1 text-primary mb-2"></i>
+                        <h6 class="mb-0">Manufacturing</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-5 section-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title scroll-animate" data-animation="fadeInDown">Technologies We Use</h2>
+                <p class="section-subtitle scroll-animate" data-animation="fadeInUp" data-delay="100">Modern tech stack for cutting-edge solutions</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 scroll-animate" data-animation="fadeInUp" data-delay="100">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-primary"><i class="bi bi-code-slash me-2"></i>Frontend</h5>
+                            <p class="card-text small text-muted mb-0">React, Angular, Vue.js, Next.js, TypeScript, Tailwind CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 scroll-animate" data-animation="fadeInUp" data-delay="200">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-primary"><i class="bi bi-server me-2"></i>Backend</h5>
+                            <p class="card-text small text-muted mb-0">Node.js, Python, .NET Core, Java, PHP, Go</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 scroll-animate" data-animation="fadeInUp" data-delay="300">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-primary"><i class="bi bi-phone me-2"></i>Mobile</h5>
+                            <p class="card-text small text-muted mb-0">React Native, Flutter, Swift, Kotlin, Ionic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 scroll-animate" data-animation="fadeInUp" data-delay="400">
+                        <div class="card-body">
+                            <h5 class="card-title card-title-primary"><i class="bi bi-cloud me-2"></i>Cloud & DevOps</h5>
+                            <p class="card-text small text-muted mb-0">AWS, Azure, GCP, Docker, Kubernetes, Terraform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 section-gradient-alt">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4 scroll-animate" data-animation="fadeInDown">Ready to Start Your Project?</h2>
+                    <p class="text-white-50 mb-4 scroll-animate" data-animation="fadeInUp" data-delay="100">Let's discuss how we can help bring your ideas to life with our expertise and innovative solutions.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg px-5 scroll-animate" data-animation="fadeInUp" data-delay="200">
+                        <i class="bi bi-chat-dots me-2"></i>Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-brand">
+                            <img src="assets/images/logo.png" alt="AAA FIN SOL IT Services" class="footer-logo-img">
+                            <p class="footer-tagline">IT Services</p>
+                            <p class="footer-desc">Your trusted partner for innovative technology solutions. We deliver cutting-edge software, cloud services, and IT consulting.</p>
+                            <div class="footer-social">
+                                <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5 class="footer-title">Services</h5>
+                        <ul class="footer-links">
+                            <li><a href="web-applications.html">Software Development</a></li>
+                            <li><a href="cloud-migration.html">Cloud Solutions</a></li>
+                            <li><a href="security-audits.html">Cybersecurity</a></li>
+                            <li><a href="business-intelligence.html">Data Analytics</a></li>
+                            <li><a href="technical-support.html">IT Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h5 class="footer-title">Contact Us</h5>
+                        <div class="footer-contact">
+                            <div class="contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Tech Park, Business District, City</span></div>
+                            <div class="contact-item"><i class="bi bi-telephone-fill"></i><a href="tel:+1234567890">+1 (234) 567-890</a></div>
+                            <div class="contact-item"><i class="bi bi-envelope-fill"></i><a href="mailto:info@aaafinsol.com">info@aaafinsol.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="copyright">&copy; 2026 AAA FIN SOL. All Rights Reserved.</p>
+                    <ul class="footer-legal">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></a>
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>

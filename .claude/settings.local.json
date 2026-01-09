@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(curl:*)",
+      "Bash(start \"\" \"http://localhost/aa/index.html\")"
+    ]
+  }
+}
