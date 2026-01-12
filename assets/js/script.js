@@ -438,4 +438,41 @@ $(document).ready(function() {
             }
         });
     }
+
+    // ============================
+    // Owl Carousel - Industries Portfolio (7 items)
+    // ============================
+    if ($('.industries-carousel-portfolio').length) {
+        $('.industries-carousel-portfolio').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3500,
+            autoplayHoverPause: true,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: 3
+                },
+                768: {
+                    items: 4
+                },
+                992: {
+                    items: 5
+                },
+                1200: {
+                    items: 6
+                },
+                1400: {
+                    items: 6
+                }
+            }
+        });
+    }
 });

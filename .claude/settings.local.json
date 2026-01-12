@@ -3,7 +3,10 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(curl:*)",
-      "Bash(start \"\" \"http://localhost/aa/index.html\")"
+      "Bash(start \"\" \"http://localhost/aa/index.html\")",
+      "Bash(start http://localhost/aa/portfolio.html)",
+      "Bash(start http://localhost/aa/careers.html)",
+      "Bash(start http://localhost/aa/contact.html)"
     ]
   }
 }
