@@ -414,7 +414,7 @@ $(document).ready(function() {
     if ($('.industries-carousel').length) {
         $('.industries-carousel').owlCarousel({
             loop: true,
-            margin: 30,
+            margin: 10,
             nav: true,
             navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
             dots: true,
@@ -445,7 +445,7 @@ $(document).ready(function() {
     if ($('.industries-carousel-portfolio').length) {
         $('.industries-carousel-portfolio').owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 6,
             nav: false,
             navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
             dots: true,

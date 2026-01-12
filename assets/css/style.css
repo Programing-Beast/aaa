@@ -1481,6 +1481,8 @@ img {
 .industries-carousel-wrapper {
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    padding: 10px 0;
 }
 
 .industries-carousel .owl-stage {
@@ -1489,28 +1491,27 @@ img {
 
 .industries-carousel .owl-item {
     display: flex;
+    padding: 10px 5px;
 }
 
 .industry-card {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 16px;
-    padding: 40px 25px;
+    padding: 35px 20px;
     text-align: center;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 280px;
+    min-height: 260px;
 }
 
 .industry-card:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: var(--primary);
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
 }
 
 .industry-icon {
@@ -1551,12 +1552,18 @@ img {
 /* Industries Carousel Navigation */
 .industries-carousel {
     position: relative;
-    padding: 0 50px;
+    padding: 0 55px;
+    overflow: hidden;
 }
 
 .industries-carousel .owl-stage-outer {
     overflow: hidden;
-    border-radius: 10px;
+    padding: 10px;
+    margin: -10px;
+}
+
+.industries-carousel .owl-stage {
+    display: flex;
 }
 
 .industries-carousel .owl-nav {
@@ -1610,21 +1617,24 @@ img {
 .industries-carousel .owl-dots {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    align-items: center;
+    gap: 6px;
     margin-top: 30px;
+    padding: 10px 0;
 }
 
 .industries-carousel .owl-dots .owl-dot {
     background: none;
     border: none;
-    padding: 0;
+    padding: 3px;
+    cursor: pointer;
 }
 
 .industries-carousel .owl-dots .owl-dot span {
     display: block;
-    width: 10px;
-    height: 10px;
-    background: #d1d5db;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -1632,7 +1642,7 @@ img {
 .industries-carousel .owl-dots .owl-dot.active span {
     background: var(--primary);
     width: 30px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .industries-carousel .owl-dots .owl-dot:hover span {
@@ -1645,6 +1655,11 @@ img {
     padding: 0 50px;
 }
 
+.industries-carousel-portfolio .owl-stage-outer {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
 .industries-carousel-portfolio .owl-stage {
     display: flex;
     align-items: stretch;
@@ -1652,30 +1667,31 @@ img {
 
 .industries-carousel-portfolio .owl-item {
     display: flex;
+    padding: 5px 2px;
 }
 
 .industries-carousel-portfolio .item {
     display: flex;
     width: 100%;
-    padding: 5px;
 }
 
 .industries-carousel-portfolio .item .card {
     width: 100%;
-    min-height: 130px;
+    min-height: 115px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: 8px;
     transition: all 0.3s ease;
+    padding: 15px 10px;
 }
 
 .industries-carousel-portfolio .item .card:hover {
     border-color: var(--primary) !important;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
 }
 
 .industries-carousel-portfolio .owl-nav {
@@ -1729,21 +1745,24 @@ img {
 .industries-carousel-portfolio .owl-dots {
     display: flex;
     justify-content: center;
-    gap: 0px;
+    align-items: center;
+    gap: 6px;
     margin-top: 25px;
+    padding: 10px 0;
 }
 
 .industries-carousel-portfolio .owl-dots .owl-dot {
     background: none;
     border: none;
-    padding: 0;
+    padding: 3px;
+    cursor: pointer;
 }
 
 .industries-carousel-portfolio .owl-dots .owl-dot span {
     display: block;
-    width: 10px;
-    height: 10px;
-    background: #d1d5db;
+    width: 12px;
+    height: 12px;
+    background: #b0b5bd;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -1751,7 +1770,7 @@ img {
 .industries-carousel-portfolio .owl-dots .owl-dot.active span {
     background: var(--primary);
     width: 30px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .industries-carousel-portfolio .owl-dots .owl-dot:hover span {
@@ -1769,27 +1788,66 @@ img {
     .industries-carousel-portfolio {
         padding: 0 40px;
     }
+    .industries-carousel-portfolio .owl-item {
+        padding: 4px 2px;
+    }
 }
 
 @media (max-width: 991.98px) {
     .industries-carousel-portfolio {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     .industries-carousel-portfolio .owl-nav {
         display: none;
+    }
+    .industries-carousel-portfolio .owl-item {
+        padding: 4px 1px;
+    }
+    .industries-carousel-portfolio .owl-dots {
+        gap: 5px;
+        margin-top: 20px;
+    }
+    .industries-carousel-portfolio .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+    }
+    .industries-carousel-portfolio .owl-dots .owl-dot.active span {
+        width: 22px;
+    }
+    .industries-carousel-portfolio .item .card {
+        min-height: 100px;
+        padding: 12px 8px;
     }
 }
 
 @media (max-width: 575.98px) {
     .industries-carousel-portfolio {
-        padding: 0 10px;
+        padding: 0 5px;
+    }
+    .industries-carousel-portfolio .owl-item {
+        padding: 3px 1px;
+    }
+    .industries-carousel-portfolio .owl-dots {
+        gap: 4px;
+        margin-top: 15px;
     }
     .industries-carousel-portfolio .owl-dots .owl-dot span {
         width: 8px;
         height: 8px;
     }
     .industries-carousel-portfolio .owl-dots .owl-dot.active span {
-        width: 24px;
+        width: 18px;
+    }
+    .industries-carousel-portfolio .item .card {
+        min-height: 90px;
+        padding: 10px 6px;
+    }
+    .industries-carousel-portfolio .item .card i {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .industries-carousel-portfolio .item .card h6 {
+        font-size: 0.75rem;
     }
 }
 
@@ -1821,11 +1879,11 @@ img {
     .industries-carousel {
         padding: 0 10px;
     }
-    .industries-carousel .owl-dots .owl-dot {
-        width: 8px;
-        height: 8px;
+    .industries-carousel .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
     }
-    .industries-carousel .owl-dots .owl-dot.active {
+    .industries-carousel .owl-dots .owl-dot.active span {
         width: 24px;
     }
 }
